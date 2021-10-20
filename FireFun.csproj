@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88D28FC4-5433-4333-9FA8-C0A275AD1D31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FireFun</RootNamespace>
+    <AssemblyName>FireFun</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>firefun_ckO_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\AppData\Local\Programs\fireMath\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\AppData\Local\Programs\fireMath\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Registry.4.7.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio, Version=2.0.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.2.0.1\lib\netstandard2.0\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Asio, Version=2.0.0.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Asio.2.0.0\lib\netstandard2.0\NAudio.Asio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Core.2.0.0\lib\netstandard2.0\NAudio.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Midi, Version=2.0.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Midi.2.0.1\lib\netstandard2.0\NAudio.Midi.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Wasapi, Version=2.0.0.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Wasapi.2.0.0\lib\netstandard2.0\NAudio.Wasapi.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WinForms, Version=2.0.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.WinForms.2.0.1\lib\net472\NAudio.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WinMM, Version=2.0.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.WinMM.2.0.1\lib\netstandard2.0\NAudio.WinMM.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security.AccessControl, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.4.7.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.4.7.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fun_FloodIt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fun_FloodIt.Designer.cs">
+      <DependentUpon>Fun_FloodIt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fun_Hangman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fun_Hangman.Designer.cs">
+      <DependentUpon>Fun_Hangman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fun_MultiplicationTableError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fun_MultiplicationTableError.Designer.cs">
+      <DependentUpon>Fun_MultiplicationTableError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fun_Quiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fun_Quiz.Designer.cs">
+      <DependentUpon>Fun_Quiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fun_RockPaperScissors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fun_RockPaperScissors.Designer.cs">
+      <DependentUpon>Fun_RockPaperScissors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fun_TicTacToe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fun_TicTacToe.Designer.cs">
+      <DependentUpon>Fun_TicTacToe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fun_TypingSpeedTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fun_TypingSpeedTest.Designer.cs">
+      <DependentUpon>Fun_TypingSpeedTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fun_WhatsTheNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fun_WhatsTheNumber.Designer.cs">
+      <DependentUpon>Fun_WhatsTheNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridElement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoForm.Designer.cs">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuizQuestion.cs" />
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fun_FloodIt.resx">
+      <DependentUpon>Fun_FloodIt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fun_Hangman.resx">
+      <DependentUpon>Fun_Hangman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fun_MultiplicationTableError.resx">
+      <DependentUpon>Fun_MultiplicationTableError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fun_Quiz.resx">
+      <DependentUpon>Fun_Quiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fun_RockPaperScissors.resx">
+      <DependentUpon>Fun_RockPaperScissors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fun_TicTacToe.resx">
+      <DependentUpon>Fun_TicTacToe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fun_TypingSpeedTest.resx">
+      <DependentUpon>Fun_TypingSpeedTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fun_WhatsTheNumber.resx">
+      <DependentUpon>Fun_WhatsTheNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoForm.resx">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="firefun_ckO_icon.ico" />
+    <None Include="Resources\preview_quiz.png" />
+    <None Include="Resources\icon_hangman.png" />
+    <None Include="Resources\preview_hangman.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\Warstwa 1 %283%29.png" />
+    <None Include="Resources\preview_floodit.png" />
+    <None Include="Resources\firefun_floodit.png" />
+    <None Include="Resources\ico_floodit.png" />
+    <None Include="Resources\front.png" />
+    <None Include="Resources\Folder 1.png" />
+    <None Include="Resources\preview_typingspeedtest.png" />
+    <None Include="Resources\image.psd %281%29.png" />
+    <None Include="Resources\Folder 1 %286%29.png" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\ico_.png" />
+    <None Include="Resources\preview_multiplicationtableerror.png" />
+    <None Include="Resources\Nowy projekt %286%29.png" />
+    <None Include="Resources\Nowy projekt %285%29.png" />
+    <None Include="Resources\Background %2810%29.png" />
+    <None Include="Resources\Background %283%29.png" />
+    <None Include="Resources\Folder 3%404x.png" />
+    <None Include="Resources\Folder 2%404x.png" />
+    <None Include="Resources\Folder 1%404x.png" />
+    <None Include="Resources\slowa.txt" />
+    <None Include="Resources\preview_whatsthenumber.png" />
+    <None Include="Resources\tictactoe_click %28compressed%29.mp3" />
+    <None Include="Resources\tictactoe_click %28compressed%29.wav" />
+    <None Include="Resources\tictactoe_click.wav" />
+    <None Include="Resources\preview_tictactoe.png" />
+    <None Include="Resources\ico_whackamole.png" />
+    <None Include="Resources\ico_typingspeedtest.png" />
+    <None Include="Resources\ico_ortography.png" />
+    <None Include="Resources\ico_quiz.png" />
+    <None Include="Resources\Nowy projekt.png" />
+    <None Include="Resources\ico_rockpaperscissors.png" />
+    <None Include="Resources\ico_tictactoe.png" />
+    <None Include="Resources\firefun.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
